@@ -1,0 +1,8 @@
+sh -c "$(curl -sSfL https://release.anza.xyz/stable/install)"
+# install is up-to-date. 5466f45 is the latest commit for stable.
+
+ -> export PATH="/Users/test/.local/share/solana/install/active_release/bin:$PATH"
+
+#If you use a Mac with zsh, running the default export PATH command logged from the installation doesn't persist once you close your terminal. Instead, add the PATH to your shell configuration file by running the following command:
+
+    -> echo 'export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"' >> ~/.zshrc
