@@ -1,0 +1,25 @@
+# Prerequisites :: The default Anchor project test file (TypeScript) created with the anchor init command requires Node.js and Yarn. (The Rust test template is available using anchor init --test-template rust)&
+
+#Install Node using Node Version Manager (nvm) by running the following command:&
+
+$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+
+#Restart your terminal and confirm that the nvm command runs successfully:&
+$ command -v nvm
+
+#Use nvm to install Node:&
+$ nvm install node
+
+#Verify that the installation succeeded, by checking the Node version:&
+
+$ node --version
+
+#You will see output like the following:&
+
+$ v23.7.0
+
+$ cargo install --git https://github.com/solana-foundation/anchor --tag v0.30.1 anchor-cli
+
+$ anchor --version
+
+#anchor-cli 0.31.1
