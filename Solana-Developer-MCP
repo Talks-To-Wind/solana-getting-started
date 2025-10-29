@@ -1,0 +1,33 @@
+claude mcp add --transport http solana-mcp-server https://mcp.solana.com/mcp
+1 
+Configure MCP settings
+{
+  "mcpServers": {
+    "solanaMcp": {
+      "command": "npx",
+      "args": ["mcp-remote", "https://mcp.solana.com/mcp"]
+    }
+  }
+}
+2
+verify the connections
+Open Agent Mode (Cmd + I) and ask "Make me an anchor escrow program". You should see a card in the composer sidebar:
+
+> Called MCP tool Ask_Solana_Anchor_Framework_Expert ✓
+
+3
+Configure User Rules
+(Optional)
+Add the following to your user rules by going to the command palette (Cmd/Ctrl + Shift + P) and selecting > Settings > Rules:
+
+<MCP_USE_GUIDELINE>
+  <INSTRUCTION>
+    If you are working on a Solana-related project. Make frequent use of the following MCP tools to accomplish your goals.
+  </INSTRUCTION>
+  <TOOLS>
+    The following Solana tools are at your disposal:
+    - "Solana Expert: Ask For Help": Use this tool to ask detailed questions about Solana (how-to, concepts, APIs, SDKs, errors). Provide as much context as possible when using it.
+    - "Solana Documentation Search": Use this tool to search the Solana documentation corpus for relevant information based on a query.
+    - "Ask Solana Anchor Framework Expert": Use this tool for any questions specific to the Anchor Framework, including its APIs, SDKs, and error handling.
+  </TOOLS>
+</MCP_USE_GUIDELINE>
