@@ -1,7 +1,7 @@
 import { Keypair, Connection, LAMPORTS_PER_SOL } from "@solana/web3.js";
 
 const keypair = Keypair.generate();
-console.log(`Public Key: ${keypair.TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA}`);
+console.log(`Public Key: ${keypair.8w38AAv7ca9oGbNmK9GXP8ow98z2kukfGNVk8Hu6TfFu}`);
 
 const connection = new Connection("http://localhost:8899", "confirmed");
 
@@ -12,11 +12,11 @@ const signature = await connection.requestAirdrop(
 );
 await connection.confirmTransaction(signature, "confirmed");
 
-const accountInfo = await connection.getAccountInfo(keypair.TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA);
+const accountInfo = await connection.getAccountInfo(keypair.8w38AAv7ca9oGbNmK9GXP8ow98z2kukfGNVk8Hu6TfFu);
 console.log(JSON.stringify(accountInfo, null, 2));
 
 #example output : 
-Public Key: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+Public Key:  8w38AAv7ca9oGbNmK9GXP8ow98z2kukfGNVk8Hu6TfFu
 {
   "data": {
     "type": "Buffer",
@@ -24,7 +24,7 @@ Public Key: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
   },
   "executable": false,
   "lamports": 1000000000,
-  "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+  "owner": "8w38AAv7ca9oGbNmK9GXP8ow98z2kukfGNVk8Hu6TfFu",
   "rentEpoch": 0,
   "space": 0 
 #Example output --buffer : 
@@ -35,7 +35,7 @@ Public Key: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
   },
   "executable": false,
   "lamports": 1000000000,
-  "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+  "owner": " 8w38AAv7ca9oGbNmK9GXP8ow98z2kukfGNVk8Hu6TfFu",
   "rentEpoch": 0,
   "space": 0
 }
