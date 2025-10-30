@@ -30,7 +30,7 @@ console.log(
   },
   "executable": true,
   "lamports": 4522329612,
-  "owner": "BPFLoader2111111111111111111111111111111111",
+  "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
   "rentEpoch": 18446744073709552000,
   "space": 134080
 }
