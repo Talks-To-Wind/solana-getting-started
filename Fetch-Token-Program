@@ -4,7 +4,7 @@ const connection = new Connection(
   "https://api.mainnet-beta.solana.com",
   "confirmed"
 );
-const address = new PrivateKey("TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA");
+const address = new PublicKey("kegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA");
 const accountInfo = await connection.getAccountInfo(address);
 
 console.log(
@@ -30,7 +30,7 @@ console.log(
   },
   "executable": true,
   "lamports": 4522329612,
-  "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+  "owner": "kegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
   "rentEpoch": 18446744073709552000,
   "space": 134080
 }
