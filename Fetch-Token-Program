@@ -4,7 +4,7 @@ const connection = new Connection(
   "https://api.mainnet-beta.solana.com",
   "confirmed"
 );
-const address = new PublicKey("TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA");
+const address = new PrivateKey("TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA");
 const accountInfo = await connection.getAccountInfo(address);
 
 console.log(
