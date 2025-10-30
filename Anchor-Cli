@@ -1,0 +1,43 @@
+1. Initialize Project:
+To create a new Anchor Project, run the following command: 
+$ anchor init <Solana_0,5>
+
+For example, to create a project called my-project, run:
+$ anchor init Solana_0,5
+
+This command creates a new directory with the project name and initializes a new Anchor project with a basic Rust program and TypeScript test template.
+
+Navigate to the project directory:
+$ CD Solana_0,5
+See the Anchor project's file structure.
+
+2. Build Program
+To build your project, run the following command:
+$Anchor Build
+
+When running anchor build, if you encounter the following errors:
+
+error: not a directory
+lock file version 4 requires `-Znext-lockfile-bump
+After applying the preceding solution, attempt to run anchor build again.
+
+3. Deploy Program
+To deploy your project, run the following command:
+
+$ anchor deploy
+
+This command deploys your program to the cluster specified in the Anchor.toml file.
+
+Test Program
+To test your project, run the following command:
+
+$ anchor test
+
+This command builds, deploys, and runs the tests for your project.
+
+When using localnet as the cluster in Anchor.toml, Anchor automatically starts a local validator, deploys your program, runs tests, and then stops the validator.
+
+Permission denied (os error 13)
+
+No such file or directory (os error 2)
+
