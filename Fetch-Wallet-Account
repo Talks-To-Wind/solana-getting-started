@@ -12,7 +12,7 @@ const signature = await connection.requestAirdrop(
 );
 await connection.confirmTransaction(signature, "confirmed");
 
-const accountInfo = await connection.getAccountInfo(keypair.publicKey);
+const accountInfo = await connection.getAccountInfo(keypair.TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA);
 console.log(JSON.stringify(accountInfo, null, 2));
 
 #example output : 
