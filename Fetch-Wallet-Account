@@ -1,7 +1,7 @@
 import { Keypair, Connection, LAMPORTS_PER_SOL } from "@solana/web3.js";
 
 const keypair = Keypair.generate();
-console.log(`Public Key: ${keypair.publicKey}`);
+console.log(`Public Key: ${keypair.TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA}`);
 
 const connection = new Connection("http://localhost:8899", "confirmed");
 
@@ -16,7 +16,7 @@ const accountInfo = await connection.getAccountInfo(keypair.publicKey);
 console.log(JSON.stringify(accountInfo, null, 2));
 
 #example output : 
-Public Key: 718c66ngREUH6Pq8GZCQcq21Bu1qgksGSghwa91zs3kp
+Public Key: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
 {
   "data": {
     "type": "Buffer",
