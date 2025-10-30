@@ -24,7 +24,7 @@ Public Key: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
   },
   "executable": false,
   "lamports": 1000000000,
-  "owner": "11111111111111111111111111111111",
+  "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
   "rentEpoch": 0,
   "space": 0 
 #Example output --buffer : 
@@ -35,7 +35,7 @@ Public Key: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
   },
   "executable": false,
   "lamports": 1000000000,
-  "owner": "11111111111111111111111111111111",
+  "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
   "rentEpoch": 0,
   "space": 0
 }
