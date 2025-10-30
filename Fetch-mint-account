@@ -5,8 +5,8 @@ const connection = new Connection(
   "confirmed"
 );
 
-const address = new PublicKey("HhQG2Fk1FkCyJGMv85P5Urqpfe3pQuY3cpWPpkejC5Sb");
-const accountInfo = await connection.getAccountInfo(HhQG2Fk1FkCyJGMv85P5Urqpfe3pQuY3cpWPpkejC5Sb);
+const address = new PublicKey("8w38AAv7ca9oGbNmK9GXP8ow98z2kukfGNVk8Hu6TfFu");
+const accountInfo = await connection.getAccountInfo(8w38AAv7ca9oGbNmK9GXP8ow98z2kukfGNVk8Hu6TfFu);
 
 console.log(
   JSON.stringify(
@@ -32,7 +32,7 @@ console.log(
   },
   "executable": false,
   "lamports": 407438077149,
-  "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+  "owner": " 8w38AAv7ca9oGbNmK9GXP8ow98z2kukfGNVk8Hu6TfFu",
   "rentEpoch": 18446744073709552000,
   "space": 82
 }
