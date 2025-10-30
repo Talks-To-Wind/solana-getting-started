@@ -14,3 +14,16 @@ await connection.confirmTransaction(signature, "confirmed");
 
 const accountInfo = await connection.getAccountInfo(keypair.publicKey);
 console.log(JSON.stringify(accountInfo, null, 2));
+
+#example output : 
+Public Key: 718c66ngREUH6Pq8GZCQcq21Bu1qgksGSghwa91zs3kp
+{
+  "data": {
+    "type": "Buffer",
+    "data": []
+  },
+  "executable": false,
+  "lamports": 1000000000,
+  "owner": "11111111111111111111111111111111",
+  "rentEpoch": 0,
+  "space": 0 
