@@ -1,0 +1,82 @@
+Solana Config 
+  To see your current config: 
+  # Solana config get 
+You should see output like the following:
+   Config File: /Users/test/.config/solana/cli/config.yml
+   RPC URL: https://api.mainnet-beta.solana.com
+   WebSocket URL: wss://api.mainnet-beta.solana.com/ (computed)
+   Keypair Path: /Users/test/.config/solana/id.json
+   Commitment: confirmed 
+The RPC URL and Websocket URL specify the Solana cluster the CLI makes requests to.
+
+You can update the Solana CLI cluster using the following commands:
+$ solana config set --url mainnet-beta
+$ solana config set --url devnet
+$ solana config set --url localhost
+$ solana config set --url testnet
+
+You can also use the following short options:
+
+$ solana config set -um    # For mainnet-beta
+$ solana config set -ud    # For devnet
+$ solana config set -ul    # For localhost
+$ solana config set -ut    # For testnet
+
+The Keypair Path points to the default Solana wallet (keypair) used by the Solana CLI to pay transaction fees and deploy programs. By default, this file is stored at ~/.config/solana/id.json.
+
+To send transactions using the Solana CLI, you need a Solana wallet funded with SOL.
+
+To generate a keypair at the default Keypair Path, run the following command:
+
+$ solana-keygen new
+
+You should see an output like the following:
+Generating a new keypair
+
+For added security, enter a BIP39 passphrase
+
+NOTE! This passphrase improves security of the recovery seed phrase NOT the
+keypair file itself, which is stored as insecure plain text
+
+BIP39 Passphrase (empty for none):
+
+Wrote new keypair to /Users/test/.config/solana/id.json
+===========================================================================
+pubkey: 8dBTPrjnkXyuQK3KDt9wrZBfizEZijmmUQXVHpFbVwGT
+===========================================================================
+Save this seed phrase and your BIP39 passphrase to recover your new keypair:
+cream bleak tortoise ocean nasty game gift forget fancy salon mimic amazing
+===========================================================================
+
+If you already have a file system wallet saved at the default location, this command doesn't override it unless you explicitly force override using the --force flag.
+
+To view your wallets address (public key) 
+
+$ solana address
+
+Airdrop SOL
+Request an airdrop of SOL to your wallet to pay for transactions and program deployments.
+
+Set your cluster to the devnet:
+
+$ solana config set -ud
+
+Then request an airdrop of devnet SOL:
+
+$ solana airdrop 2
+
+Devnet airdrops limit requests to 5 SOL per request. If you hit rate limits or encounter errors, try using the Web Faucet instead.
+
+To check your wallet's SOL balance, run the following command:
+
+$ solana balance
+
+Run Local Validator
+The Solana CLI includes a built-in test validator for local development.
+
+In a separate terminal, run the following command to start a local validator:
+
+$ solana-test-validator
+
+solana config set -ul
+
