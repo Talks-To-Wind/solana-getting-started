@@ -24,3 +24,15 @@ console.log(
     2
   )
 );
+#example output: 
+{
+  "data": {
+    "type": "Buffer",
+    "data": [1, "...truncated, total bytes: 82...", 103]
+  },
+  "executable": false,
+  "lamports": 407438077149,
+  "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+  "rentEpoch": 18446744073709552000,
+  "space": 82
+}
