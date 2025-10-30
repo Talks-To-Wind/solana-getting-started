@@ -30,7 +30,7 @@ console.log(
   },
   "executable": true,
   "lamports": 4522329612,
-  "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+  "owner": "HhQG2Fk1FkCyJGMv85P5Urqpfe3pQuY3cpWPpkejC5Sb",
   "rentEpoch": 18446744073709552000,
   "space": 134080
 }
