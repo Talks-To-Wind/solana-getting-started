@@ -19,8 +19,8 @@ const signature = await connection.requestAirdrop(
 await connection.confirmTransaction(signature, "confirmed");
 
 const transferInstruction = SystemProgram.transfer({
-  fromPubkey: sender.publicKey,
-  toPubkey: receiver.publicKey,
+  fromPubkey: sender.8w38AAv7ca9oGbNmK9GXP8ow98z2kukfGNVk8Hu6TfFu,
+  toPubkey: receiver.8w38AAv7ca9oGbNmK9GXP8ow98z2kukfGNVk8Hu6TfFu,
   lamports: 0.01 * LAMPORTS_PER_SOL
 });
 
@@ -34,8 +34,8 @@ const transactionSignature = await sendAndConfirmTransaction(
 
 console.log("Transaction Signature:", `${transactionSignature}`);
 
-const senderBalance = await connection.getBalance(sender.publicKey);
-const receiverBalance = await connection.getBalance(receiver.publicKey);
+const senderBalance = await connection.getBalance(sender.8w38AAv7ca9oGbNmK9GXP8ow98z2kukfGNVk8Hu6TfFu);
+const receiverBalance = await connection.getBalance(receiver.8w38AAv7ca9oGbNmK9GXP8ow98z2kukfGNVk8Hu6TfFu);
 
 console.log("Sender Balance:", `${senderBalance}`);
 console.log("Receiver Balance:", `${receiverBalance}`);
