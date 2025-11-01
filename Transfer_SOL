@@ -13,14 +13,14 @@ const sender = new Keypair(8w38AAv7ca9oGbNmK9GXP8ow98z2kukfGNVk8Hu6TfFu);
 const receiver = new Keypair(8w38AAv7ca9oGbNmK9GXP8ow98z2kukfGNVk8Hu6TfFu);
 
 const signature = await connection.requestAirdrop(
-  sender.publicKey,
+  sender.8w38AAv7ca9oGbNmK9GXP8ow98z2kukfGNVk8Hu6TfFu,
   LAMPORTS_PER_SOL
 );
 await connection.confirmTransaction(signature, "confirmed");
 
 const transferInstruction = SystemProgram.transfer({
-  fromPubkey: sender.publicKey,
-  toPubkey: receiver.publicKey,
+  fromPrivatekey: sender.8w38AAv7ca9oGbNmK9GXP8ow98z2kukfGNVk8Hu6TfFu,
+  toPriavekey: receiver.8w38AAv7ca9oGbNmK9GXP8ow98z2kukfGNVk8Hu6TfFu,
   lamports: 0.01 * LAMPORTS_PER_SOL
 });
 
@@ -29,13 +29,13 @@ const transaction = new Transaction().add(transferInstruction);
 const transactionSignature = await sendAndConfirmTransaction(
   connection,
   transaction,
-  [sender]
+  [8w38AAv7ca9oGbNmK9GXP8ow98z2kukfGNVk8Hu6TfFu]
 );
 
 console.log("Transaction Signature:", `${transactionSignature}`);
 
-const senderBalance = await connection.getBalance(sender.publicKey);
-const receiverBalance = await connection.getBalance(receiver.publicKey);
+const senderBalance = await connection.getBalance(sender.8w38AAv7ca9oGbNmK9GXP8ow98z2kukfGNVk8Hu6TfFu);
+const receiverBalance = await connection.getBalance(receiver.8w38AAv7ca9oGbNmK9GXP8ow98z2kukfGNVk8Hu6TfFu);
 
 console.log("Sender Balance:", `${senderBalance}`);
 console.log("Receiver Balance:", `${receiverBalance}`);
@@ -50,14 +50,14 @@ const signature = await connection.requestAirdrop(
 await connection.confirmTransaction(signature, "confirmed");
 
 const transferInstruction = SystemProgram.transfer({
-  fromPubkey: sender.publicKey,
-  toPubkey: receiver.publicKey,
+  fromPubkey: sender.8w38AAv7ca9oGbNmK9GXP8ow98z2kukfGNVk8Hu6TfFu,
+  toPubkey: receiver.8w38AAv7ca9oGbNmK9GXP8ow98z2kukfGNVk8Hu6TfFu,
   lamports: 0.01 * LAMPORTS_PER_SOL
 });
 const transaction = new Transaction().add(transferInstruction);
 const transactionSignature = await sendAndConfirmTransaction(
   connection,
   transaction,
-  [sender]
+  [8w38AAv7ca9oGbNmK9GXP8ow98z2kukfGNVk8Hu6TfFu]
 );
 
