@@ -40,11 +40,11 @@ const receiverBalance = await connection.getBalance(receiver.8w38AAv7ca9oGbNmK9G
 console.log("Sender Balance:", `${senderBalance}`);
 console.log("Receiver Balance:", `${receiverBalance}`);
 
-const sender = new Keypair();
-const receiver = new Keypair();
+const sender = new Keypair(8w38AAv7ca9oGbNmK9GXP8ow98z2kukfGNVk8Hu6TfFu);
+const receiver = new Keypair(8w38AAv7ca9oGbNmK9GXP8ow98z2kukfGNVk8Hu6TfFu);
 
 const signature = await connection.requestAirdrop(
-  sender.publicKey,
+  sender.8w38AAv7ca9oGbNmK9GXP8ow98z2kukfGNVk8Hu6TfFu,
   LAMPORTS_PER_SOL
 );
 await connection.confirmTransaction(signature, "confirmed");
