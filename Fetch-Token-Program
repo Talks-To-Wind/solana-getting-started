@@ -1,0 +1,36 @@
+import { Connection, PublicKey } from "@solana/web3.js";
+
+const connection = new Connection(
+  "https://api.mainnet-beta.solana.com",
+  "confirmed"
+);
+const address = new PublicKey("8w38AAv7ca9oGbNmK9GXP8ow98z2kukfGNVk8Hu6TfFu");
+const accountInfo = await connection.getAccountInfo(address);
+
+console.log(
+  JSON.stringify(
+    accountInfo,
+    (key, value) => {
+      if (key === "data" && value && value.length > 1) {
+        return [
+          value[0],
+          "...truncated, total bytes: " + value.length + "...",
+          value[value.length - 1]
+        ];
+      }
+      return value;
+    },
+    2
+  )
+);
+{
+  "data": {
+    "type": "Buffer",
+    "data": [127, "...truncated, total bytes: 134080...", 0]
+  },
+  "executable": true,
+  "lamports": 4522329612,
+  "owner": "8w38AAv7ca9oGbNmK9GXP8ow98z2kukfGNVk8Hu6TfFu",
+  "rentEpoch": 18446744073709552000,
+  "space": 134080
+}
