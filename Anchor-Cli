@@ -28,16 +28,4 @@ $ anchor deploy
 
 This command deploys your program to the cluster specified in the Anchor.toml file.
 
-Test Program
-To test your project, run the following command:
-
-$ anchor test
-
-This command builds, deploys, and runs the tests for your project.
-
-When using localnet as the cluster in Anchor.toml, Anchor automatically starts a local validator, deploys your program, runs tests, and then stops the validator.
-
-Permission denied (os error 13)
-
-No such file or directory (os error 2)
 
